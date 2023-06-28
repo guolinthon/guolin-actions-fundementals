@@ -12,6 +12,7 @@ on:
       current-time:
         description: 'The time when greeting.'
         value: ${{ jobs.reusable-job.outputs.current-time }}
+  workflow_dispatch:
 jobs:
   reusable-job:
     runs-on: ubuntu-latest
